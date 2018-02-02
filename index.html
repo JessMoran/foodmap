@@ -18,7 +18,7 @@
      </div>
     </div>
 
-<!-- Segunda vista sign up-->
+<!-- Segunda vista busqueda de comida-->
     <div class="row">
       <div class="col-xs-12 col-xs-push-1">
        <section id="second-section">
@@ -29,26 +29,51 @@
          </div>
           <div class="row">
             <div class="col-xs-8 col-xs-push-3">
-              <h1>Comida cerca de </h1>
+              <h1>Comida cerca de ti </h1>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-4 col-xs-push-3">
               <div class="input-group">
                 <span class="input-group-btn">
-                  <button class="btn btn-default" type="button"><i class="fas fa-search"></i></button>
+                  <button id="search"class="btn btn-default" disabled= "disabled" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </span>
-                <input type="text" class="form-control" placeholder="Search for...">
+                <input id="food" type="text" class="form-control" placeholder="Search for...">
               </div><!-- /.col-lg-6 -->
             </div><!-- /.row -->
           </div>
        </section>
     </div>
   </div>
+<!-- Div que contiene a las tarjetas creadas por el DOM-->
+  <div class="row">
+    <div id="rest-container" class="col-xs-4"></div>
+  </div>
+
+<!-- modal que muestra más información sobre el lugar dónde se encuentra la comida-->
+  <div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Mc Donald´s</h4>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/food/hamburger.gif" alt="hamburger">
+          <p> Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Pedir ahora</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
 <!-- Enlaces-->
     <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/splash.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

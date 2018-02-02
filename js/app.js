@@ -1,13 +1,36 @@
- //función que hace desaparecer mi imagen principal
-$(document).ready(function() {
-  setTimeout(function() {
-        $("#first-section").fadeOut(1500);
-    },2000);
-});
+//variables globales en uso para todas las funciones
 
-//función que hace aparecer la siguiente pantalla
-$(document).ready(function() {
-    setTimeout(function() {
-        $("#second-section").fadeIn(1500);
-    },2000);
-});
+var $foodInput = $("#food");
+var $btnSearch = $("#search");
+
+
+//funciona al cargar la página
+function loadPage (){
+  $foodInput.keyup(searchFood);
+
+}
+
+//Valida que no tenga espacios y activa el boton search
+function searchFood () {
+
+  if($(this).val().trim().length > 0) {
+  $btnSearch.removeAttr("disabled");
+  } else {
+  $btnSearch.attr("disabled" , true);
+  }
+}
+
+
+//funciones Segundavista
+//Valida si el código es igual al enviado anteriormente
+function validateCode (){
+
+ if ($(this).val().trim().length > 0) {
+   $btnNext2.removeAttr("disabled");
+ } else {
+   $btnNext2.attr("disabled" , true);
+ }
+
+}
+
+$(document).ready(loadPage);
