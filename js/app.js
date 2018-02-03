@@ -29,6 +29,9 @@ function paintFood (restaurant) {
   $foodContainer.addClass("food-container");
   $textFood.addClass("food");
 
+
+  $foodContainer.attr('data-toggle','modal')
+  $foodContainer.attr('data-target','#modal1')
   $textFood.text(restaurant.name);
   $imgFood.attr('src', restaurant.image);
 

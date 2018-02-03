@@ -3,7 +3,7 @@ var data =[
   'name':"Hamburger",
   'type':"food",
   'address': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
-  'image':"assets/images/nutella.jpg"
+  'image':"assets/images/food/hamburger.gif"
 },
   {
     'name':"Coffee",
