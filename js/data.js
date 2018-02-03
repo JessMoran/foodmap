@@ -1,52 +1,62 @@
 var data =[
 {
-  'nombre':"Hamburger",
-  'dirección': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
-  'imagen':"assets/images/food/hamburger.gif"
+  'name':"Hamburger",
+  'type':"food",
+  'address': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
+  'image':"assets/images/nutella.jpg"
 },
   {
-    'nombre':"Coffee",
-    'dirección': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
-    'imagen':"assets/images/drinks/coffee.gif"
+    'name':"Coffee",
+    'type':"drinks",
+    'address': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
+    'image':"assets/images/drinks/coffee.gif"
   },
 {
-  'nombre':"Ramen",
-  'dirección': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
-  'imagen':"assets/images/food/ramen.gif"
+  'name':"Ramen",
+  'type':"food",
+  'address': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
+  'image':"assets/images/food/ramen.gif"
 },
   {
-    'nombre':"Sushi",
-    'dirección': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
-    'imagen':"assets/images/food/sushi.gif"
+    'name':"Sushi",
+    'type':"food",
+    'address': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
+    'image':"assets/images/food/sushi.gif"
   },
 {
-  'nombre':"Tacos",
+  'name':"Tacos",
+  'type':"food",
   'dirección': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
-  'imagen':"assets/images/food/tacos.gif"
+  'image':"assets/images/food/tacos.gif"
 },
   {
-    'nombre':"Pasta",
-    'dirección': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
-    'imagen':"assets/images/food/pasta.gif"
+    'name':"Pasta",
+    'type':"food",
+    'address': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
+    'image':"assets/images/food/pasta.gif"
   },
 {
-  'nombre':"Ice-cream",
-  'dirección': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
-  'imagen':"assets/images/deserts/ice-cream.gif"
+  'name':"Ice-cream",
+  'type':"dresert",
+  'address': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
+  'image':"assets/images/deserts/ice-cream.gif"
 },
   {
-    'nombre':"Cake",
-    'dirección': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
-    'imagen':"assets/images/deserts/cake.gif"
+    'name':"Cake",
+    'type':"dresert",
+    'address': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
+    'image':"assets/images/deserts/cake.gif"
   },
 {
-  'nombre':"Chocolates",
-  'dirección': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
-  'imagen':"assets/images/deserts/chocolates.gif"
+  'name':"Chocolates",
+  'type':"dresert",
+  'address': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
+  'image':"assets/images/deserts/chocolates.gif"
 },
   {
-    'nombre':"Cupcakes",
-    'dirección': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
-    'imagen':"assets/images/deserts/cupcakes.gif"
+    'name':"Cupcakes",
+    'type':"dresert",
+    'address': "Av de los Insurgentes Sur 1122, Tlacoquemecatl del Valle, 03810 Ciudad de México, CDMX",
+    'image':"assets/images/deserts/cupcakes.gif"
   },
 ]

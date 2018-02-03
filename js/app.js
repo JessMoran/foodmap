@@ -6,12 +6,12 @@ var $btnSearch = $("#search");
 
 //funciona al cargar la página
 function loadPage (){
-  $foodInput.keyup(searchFood);
-
+  $foodInput.keyup(validateFood);
+  $foodInput.keyup(filterFood);
 }
 
 //Valida que no tenga espacios y activa el boton search
-function searchFood () {
+function validateFood () {
 
   if($(this).val().trim().length > 0) {
   $btnSearch.removeAttr("disabled");
@@ -20,16 +20,45 @@ function searchFood () {
   }
 }
 
+//Pinta los elementos necesarios en el HTML
+function paintFood (restaurant) {
+  var $foodContainer = $("<div />");
+  var $textFood = $("<h1 />");
+  var $imgFood = $("<img />");
 
-//funciones Segundavista
-//Valida si el código es igual al enviado anteriormente
-function validateCode (){
+  $foodContainer.addClass("food-container");
+  $textFood.addClass("food");
 
- if ($(this).val().trim().length > 0) {
-   $btnNext2.removeAttr("disabled");
- } else {
-   $btnNext2.attr("disabled" , true);
- }
+  $textFood.text(restaurant.name);
+  $imgFood.attr('src', restaurant.image);
+
+  $foodContainer.append($textFood);
+  $foodContainer.append($imgFood);
+
+
+ $("#rest-container").prepend($foodContainer);
+
+}
+
+//Filtra la información que ingresa el usuario con la base de datos
+function filterFood (){
+  var searchInput = $(".search-food").val().toLowerCase();
+    if($(".search-food").val().trim().length > 0) {
+      var filteredFood = data.filter(function(restaurant) {
+        //console.log(restaurant);
+        return restaurant.name.toLowerCase().indexOf(searchInput) >= 0;
+      });
+      $("#rest-container").empty();
+      filteredFood.forEach(function(restaurant) {
+        paintFood(restaurant);
+      });
+    } else {
+      $("#rest-container").empty();
+        data.forEach(function(restaurant){
+        paintFood(restaurant);//se llamma a la función "paintFood" para que tenga acceso a "restaurant" y lo logre pintar
+    });
+  }
+  //console.log(filteredFood);
 
 }
 
